@@ -13,12 +13,11 @@ public class MyFirstTimer extends GraphicsProgram {
 		requestFocus();
 	}
 		
+	//change went from "# of times called?" to "number of times called" 
 	public void run() {
-		myLabel = new GLabel("# of times called?", 0, 100);
+		myLabel = new GLabel("number of times called?", 0, 100);
 		add(myLabel);
-		
-		Timer someTimerVar = new Timer(1000, objectToBeWokenUp);
-	}
+		}
 	
 	public static void main(String[] args) {
 		new MyFirstTimer().start();
